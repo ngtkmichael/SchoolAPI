@@ -1,0 +1,9 @@
+﻿===================================================================================
+=================================== ApplicationDbConext ===========================
+===================================================================================
+
+enable-migrations -ContextTypeName SchoolContext -MigrationsDirectory Migrations\School 
+
+add-migration -ConfigurationTypeName SchoolAPI.Migrations.School.Configuration "InitialCreate" 
+
+update-database -ConfigurationTypeName SchoolAPI.Migrations.School.Configuration 
